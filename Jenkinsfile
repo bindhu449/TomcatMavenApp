@@ -22,6 +22,14 @@ pipeline{
 
 }  
 
+ stage ('deploy')
+      {
+      steps {
+      echo "dploting"
+         sh 'mvn deploy'
+      }
+
+}  
 
 }
 
